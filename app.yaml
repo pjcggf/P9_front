@@ -1,0 +1,14 @@
+runtime: python
+env: flex
+service: default
+entrypoint: streamlit run --server.port=8080 --server.address=0.0.0.0 --server.enableCORS=false --server.enableWebsocketCompression=false --server.enableXsrfProtection=false --server.headless=true app.py
+network:
+runtime_config:
+  operating_system: ubuntu22
+automatic_scaling:
+        min_num_instances: 1
+        max_num_instances: 2
+resources:
+  cpu: 4
+  memory_gb: 16
+  disk_size_gb: 20
