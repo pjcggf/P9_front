@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-st.set_page_config(page_title="OC-P9-Recommandation d'articles", page_icon="🤖")
+st.set_page_config(page_title="P9-Recommandation d'articles", page_icon="🤖")
 
 API_CB_URL = 'https://us-west4-p9-reco-contenu.cloudfunctions.net/cb_get_articles_id'
 API_CF_URL = 'https://us-west4-p9-reco-contenu.cloudfunctions.net/cf-get-articles-id'
